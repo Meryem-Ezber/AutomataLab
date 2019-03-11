@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+                <title>Regular Expressions </title>
+                <style>
+                    #pat {
+                        width: 100px;
+                    }
+                #inp {
+                    width: 700px;
+                }
+                .foundArray {
+                    color: red;
+                }
+                .foundString {
+                    color:blue;
+                }
+                span span[class=foundString]{ color:red;}
+                span span[class=foundArray] { color:blue;}
+                
+                </style>
+                
+    </head>
+    
+    <body>
+        <h2 id=title></h2>
+        <p>
+        Input<br><textarea rows='10'  id=inp onKeyUp="checkRE()"></textarea>
+        </p>
+        
+        <p id=out></p>
+        
+        <hr>
+            <legend style="color:green;font-size:larger;">Sample Code</legend>
+            
+            <pre id="sample"></pre>
+        
+        
+        <script>
+            "use strict";
+            
+            function setdeger() {
+                inp.value = 'let longString = "This is a very long string which needs " +"to wrap across multiple lines because " \n+"otherwise my code is unreadable."\n';
+                
+                inp.value += "var vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot'];\nvar fruits = [\"Apple\", \"Banana\", \"Orange\"];\nvar years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];"
+                checkRE();
+            }
+        
+        function checkRE() {
+            if (inp.value) {
+                  let expString = /(\"|\').*/g;
+                  const str1 = "<span class=foundString>$&</span>";
+                  let deger = inp.value.replace(expString, str1);
+                  
+                  let expArray = /\[[\S ]*\]/g;
+                  const str2 = "<span class=foundArray>$&</span>";
+                  out.innerHTML = deger.replace(expArray,str2);
+              }
+                                    
+        }
+              sample.innerText = checkRE.toString();
+              title.innerText = document.title; setdeger();
+        </script>
+
+    </body>
+    
+</html>
