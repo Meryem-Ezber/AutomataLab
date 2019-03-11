@@ -1,5 +1,4 @@
 # AutomataLab
-classwork of Automata
 
 <b>Applications</b>
 
