@@ -10,7 +10,7 @@
 
 [CW6](https://meryem-ezber.github.io/AutomataLab/CW6/Expression.html)
 
-[CW7](https://meryem-ezber.github.io/AutomataLab/CW6/Pda1.html)
+[CW7](https://meryem-ezber.github.io/AutomataLab/CW7/Pda1.html)
 
 <b>Homeworks</b>
 
