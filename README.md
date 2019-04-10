@@ -6,11 +6,11 @@
 
 [CW3](https://meryem-ezber.github.io/AutomataLab/CW3/RegExp.html)
 
-[CW5](https://meryem-ezber.github.io/AutomataLab/CW5/palindromes.html)
+[CW4](https://meryem-ezber.github.io/AutomataLab/CW4/palindromes.html)
 
-[CW6](https://meryem-ezber.github.io/AutomataLab/CW6/Expression.html)
+[CW5](https://meryem-ezber.github.io/AutomataLab/CW5/Expression.html)
 
-[CW7](https://meryem-ezber.github.io/AutomataLab/CW7/Pda1.html)
+[CW6](https://meryem-ezber.github.io/AutomataLab/CW6/Pda1.html)
 
 <b>Homeworks</b>
 
