@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Context Free Grammar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+                <a href="#what" class="w3-bar-item w3-button w3-padding-large w3-hide-small">What is the CFG?</a>
+                <a href="#example" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Example</a>
+                <a href="#cfgtopt" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CFG to Parse Tree</a>
+            </div>
+        </div>
+        
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="#what" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">What is the CFG?</a>
+            <a href="#example" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Example</a>
+            <a href="#cfgtopt" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CFG to Parse Tree</a>
+        </div>
+                            
+        <!-- Header -->
+        <header class="w3-container w3-black w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Context Free Grammar</h1>
+        <p class="w3-xlarge">Meryem Ezber</p>
+        
+        <!-- What is the Context Free Grammar -->
+        <div class="w3-white" id="what">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide"><font size="15">What is the Context Free Grammar?</font></h2>
+                <p class="w3-justify">A context-free grammar (CFG) consisting of a finite set of grammar rules is a quadruple (N, T, P, S) where, </p>
+                <p align="left"> ● N is a set of non-terminal symbols.</p>
+                <p align="left"> ● T is a set of terminals where N ∩ T = NULL.</p>
+                <p align="left"> ● P is a set of rules, P: N → (N ∪ T)*, i.e., the left-hand side of the production rule P does have any right context or left context.</p>
+                <p align="left"> ● N is a set of non-terminal symbols.</p>
+                <p align="left"> ● S is the start symbol.</p>
+            </div>
+        </div>
+                                
+        <!-- Example -->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="example">
+            <h2 class="w3-wide w3-center"><font size="15"> Examples </font></h2>
+            
+            <p align="left"><b>1.&emsp;&emsp;&emsp;&emsp;&emsp;Exampe</b></p>
+            <p align="left">    ▶︎   Let a CFG {N,T,P,S} be </p>
+            <p align="left">    ▶︎   N = {S}</p>
+            <p align="left">    ▶︎   T = {a, b}</p>
+            <p align="left">    ▶︎   Starting symbol = S</p>
+            <p align="left">    ▶︎   P = S → SS | aSb | ε</p>
+            <p align="left">One derivation from the above CFG is “abaabb”</p>
+            <p align="left">S → SS → aSbS → abS → abaSb → abaaSbb → abaabb</p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-first">
+                     <img align="left" src="ornekv1.jpg" class="w3-image w3-greyscale-max" style="width:60%">
+                </div>
+            </div>
+        
+            <p align="left"><b>2.&emsp;&emsp;&emsp;&emsp;&emsp;Example</b></p>
+            <p align="left">▶︎ The grammar ({A}, {a, b, c}, P, A), P : A → aA, A → abc.</p><br/>
+            <p align="left"><b>2.&emsp;&emsp;&emsp;&emsp;&emsp;Example</b></p>
+            <p align="left">▶︎ The grammar ({S, a, b}, {a, b}, P, S), P: S → aSa, S → bSb, S → ε</p><br/>
+            <p align="left"><b>3.&emsp;&emsp;&emsp;&emsp;&emsp;Example</b></p>
+            <p align="left">▶︎ The grammar ({S, F}, {0, 1}, P, S), P: S → 00S | 11F, F → 00F | ε</p><br/>
+           
+        </div>
+                                
+        <!-- Example of CFG to Parse Tree -->
+        <div class="w3-white" id="what">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="cfgtopt">
+                <h2 class="w3-wide w3-center"><font size="15">Context Free Grammar to Parse Tree</font></h2>
+                <p class="w3-opacity w3-center"><font size="5"><i>Generation of Derivation Tree</i></font></p><br/>
+                <p align="left">  A derivation tree or parse tree is an ordered rooted tree that graphically represents the semantic information a string derived from a context-free grammar.</p><br/>
+                <p align="left"> <b>Representation Technique </b><br /></p>
+                <p align="left"> ● <b>Root vertex</b> : Must be labeled by the start symbol.</p>
+                <p align="left"> ● <b>Vertex</b> : Labeled by a non-terminal symbol.</p>
+                <p align="left"> ● <b>Leaves</b> : Labeled by a terminal symbol or ε.</p><br/>
+                <p align="left">If S → x1x2 …… xn is a production rule in a CFG, then the parse tree / derivation tree will be as follows :</p>
+                <div class="w3-row w3-padding-32">
+                    <div class="w3-first">
+                        <img align="left" src="cfgtopt1.jpg" class="w3-image w3-greyscale-max" style="width:40%">
+                            </div>
+                </div>
+       
+                <p align="left">There are two different approaches to draw a derivation tree :</p>
+                <p align="left"><b>1.&emsp;&emsp;&emsp;&emsp;&emsp;Top-down Approach :</b></p>
+                <p align="left">&emsp;&emsp;&emsp;&emsp;&emsp;Starts with the starting symbol S</p>
+                <p align="left">&emsp;&emsp;&emsp;&emsp;&emsp;Goes down to tree leaves using productions</p>
+                <p align="left"><b>2.&emsp;&emsp;&emsp;&emsp;&emsp;Bottom-up Approach :</b></p>
+                <p align="left">&emsp;&emsp;&emsp;&emsp;&emsp;Starts from tree leaves</p>
+                <p align="left">&emsp;&emsp;&emsp;&emsp;&emsp;Proceeds upward to the root which is the starting symbol S</p><br/>
+          
+                <h3 class="w3-wide w3-center"> Sentential Form and Partial Derivation Tree</h3>
+                <p align="left">A partial derivation tree is a sub-tree of a derivation tree/parse tree such that either all of its children are in the sub-tree or none of them are in the sub-tree.</p><br/>
+                <p align="left"><b>Example</b></p>
+                <p align="left"> If in any CFG the productions are :</p>
+                <p align="left"> S → AB, A → aaA | ε, B → Bb| ε</p>
+                <p align="left"> the partial derivation tree can be the following :</p>
+                <div class="w3-row w3-padding-32">
+                    <div class="w3-first">
+                        <img align="left" src="ornek3.jpg" class="w3-image w3-greyscale-max" style="width:40%">
+                            </div>
+                </div>
+                <p align="left"> If a partial derivation tree contains the root S, it is called a <b>sentential form</b>. The above sub-tree is also in sentential form.</p><br/>
+                
+                
+                <h3 class="w3-wide w3-center"> Leftmost and Rightmost Derivation of a String</font></h3>
+                <p align="left"> ● <b>Leftmost derivation</b> : A leftmost derivation is obtained by applying production to the leftmost variable in each step.</p>
+                <p align="left"> ● <b>Rightmost derivation</b> : A rightmost derivation is obtained by applying production to the rightmost variable in each step.</p><br/>
+                <p align="left"><b>Example</b></p>
+                <p align="left">Let any set of production rules in a CFG be</p>
+                <p align="left">X → X+X | X*X | X | a</p>
+                <p align="left">over an alphabet {a}.</p>
+                <p align="left">The leftmost derivation for the string "a+a*a" may be :</p>
+                <p align="left">X → X+X → a+X → a + X*X → a+a*X → a+a*a</p>
+                <p align="left">The stepwise derivation of the above string is shown as below :</p>
+                <button onclick="ornekleme()">Ornek 1</button><br/>
+                <p align="left">The rightmost derivation for the above string "a+a*a" may be :</p>
+                <p align="left">X → X*X → X*a → X+X*a → X+a*a → a+a*a</p>
+                <p align="left">The stepwise derivation of the above string is shown as below :</p>
+                <button onclick="ornekleme()">Ornek 2</button><br/>
+          
+            </div>
+        </div>
+                                
+        <!-- End Page Content -->
+        </div>
+                                
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-black w3-xlarge">
+            <p class="w3-medium">Meryem Ezber</a></p>
+        </footer>
+                                
+        <script>
+            
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+                                
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+        </script>
+                                
+    </body>
+</html>
+
