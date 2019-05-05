@@ -16,4 +16,4 @@
 
 [HW1](https://meryem-ezber.github.io/AutomataLab/HW1/RegExp.html)
 
-[HW2](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
+[HW4](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
