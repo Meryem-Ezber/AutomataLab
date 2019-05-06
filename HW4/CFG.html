@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        .kutu {
+            background-color: white;
+            color: white;
+            padding: 40px;
+        }
+    </style>
     <title>Context Free Grammar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -109,7 +116,6 @@
                 </div>
                 <p align="left"> If a partial derivation tree contains the root S, it is called a <b>sentential form</b>. The above sub-tree is also in sentential form.</p><br/>
                 
-                
                 <h3 class="w3-wide w3-center"> Leftmost and Rightmost Derivation of a String</font></h3>
                 <p align="left"> ● <b>Leftmost derivation</b> : A leftmost derivation is obtained by applying production to the leftmost variable in each step.</p>
                 <p align="left"> ● <b>Rightmost derivation</b> : A rightmost derivation is obtained by applying production to the rightmost variable in each step.</p><br/>
@@ -120,11 +126,22 @@
                 <p align="left">The leftmost derivation for the string "a+a*a" may be :</p>
                 <p align="left">X → X+X → a+X → a + X*X → a+a*X → a+a*a</p>
                 <p align="left">The stepwise derivation of the above string is shown as below :</p>
-                <button onclick="ornekleme()">Ornek 1</button><br/>
+                
+                <div class="kutu">
+                    <button onclick= "ornek1geri()">Bir Önceki Adım</button>
+                    <img id="ornek1" src= "ornek1adım1.jpg" style="width:250px">
+                    <button onclick="ornek1ileri()">Bir Sonraki Adım</button>
+                </div>
+                
                 <p align="left">The rightmost derivation for the above string "a+a*a" may be :</p>
                 <p align="left">X → X*X → X*a → X+X*a → X+a*a → a+a*a</p>
                 <p align="left">The stepwise derivation of the above string is shown as below :</p>
-                <button onclick="ornekleme()">Ornek 2</button><br/>
+                
+                <div class="kutu">
+                    <button onclick="ornek2geri()">Bir Önceki Adım</button>
+                    <img id="ornek2" src= "ornek2adım1.jpg"  style="width:250px">
+                    <button onclick="ornek2ileri()">Bir Sonraki Adım</button>
+                </div>
           
             </div>
         </div>
@@ -139,23 +156,65 @@
                                 
         <script>
             
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
+            var i = 0;
+            function ornek1ileri() {
+                var cars = ["ornek1adım1.jpg", "ornek1adım2.jpg","ornek1adım3.jpg","ornek1adım4.jpg","ornek1adım5.jpg"];
+                if (i<=3){
+                    var currentPicture = "";
+                    currentPicture = cars[i+1];
+                    document.getElementById('ornek1').src= cars[i+1]
+                    i++;
+                }
             }
-        }
-                                
-        // When the user clicks anywhere outside of the modal, close it
-        var modal = document.getElementById('ticketModal');
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+        
+            function ornek1geri() {
+                var cars = ["ornek1adım1.jpg", "ornek1adım2.jpg","ornek1adım3.jpg","ornek1adım4.jpg","ornek1adım5.jpg"];
+                if (i<=3 && i!=0 || i==4){
+                    var currentPicture = "";
+                    currentPicture = cars[i-1];
+                    document.getElementById('ornek1').src= cars[i-1]
+                    i--;
+                }
             }
-        }
+        
+            var j = 0;
+            function ornek2ileri() {
+                var cars = ["ornek2adım1.jpg", "ornek2adım2.jpg","ornek2adım3.jpg","ornek2adım4.jpg","ornek2adım5.jpg"];
+                if (j<=3){
+                    var currentPicture = "";
+                    currentPicture = cars[j+1];
+                    document.getElementById('ornek2').src= cars[j+1]
+                    j++;
+                }
+            }
+        
+            function ornek2geri() {
+                var cars = ["ornek2adım1.jpg", "ornek2adım2.jpg","ornek2adım3.jpg","ornek2adım4.jpg","ornek2adım5.jpg"];
+                if (j<=3 && j!=0 || j==4){
+                    var currentPicture = "";
+                    currentPicture = cars[j-1];
+                    document.getElementById('ornek2').src= cars[j-1]
+                    j--;
+                }
+            }
+        
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        
+            // When the user clicks anywhere outside of the modal, close it
+            var modal = document.getElementById('ticketModal');
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
         
         </script>
                                 
