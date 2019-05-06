@@ -132,7 +132,7 @@
                 
                 <div class="kutu">
                     <button onclick= "ornek1geri()">Bir Önceki Adım</button>
-                    <img id="ornek1" src= "ornek1adım1.jpg" style="width:250px">
+                    <img id="ornek1" src= "ornek12adım1.jpg" style="width:250px">
                     <button onclick="ornek1ileri()">Bir Sonraki Adım</button>
                 </div>
                 
@@ -142,7 +142,7 @@
                 
                 <div class="kutu">
                     <button onclick="ornek2geri()">Bir Önceki Adım</button>
-                    <img id="ornek2" src= "ornek2adım1.jpg"  style="width:250px">
+                    <img id="ornek2" src= "ornek12adım1.jpg"  style="width:250px">
                     <button onclick="ornek2ileri()">Bir Sonraki Adım</button>
                 </div>
           
@@ -174,8 +174,8 @@
             
             var i = 0;
             function ornek1ileri() {
-                var cars = ["ornek1adım1.jpg", "ornek1adım2.jpg","ornek1adım3.jpg","ornek1adım4.jpg","ornek1adım5.jpg"];
-                if (i<=3){
+                var cars = ["ornek12adım1.jpg", "ornek1adım2.jpg","ornek1adım3.jpg","ornek1adım4.jpg","ornek1adım5.jpg","ornek1adım6.jpg"];
+                if (i<=4){
                     var currentPicture = "";
                     currentPicture = cars[i+1];
                     document.getElementById('ornek1').src= cars[i+1]
@@ -184,8 +184,8 @@
             }
         
             function ornek1geri() {
-                var cars = ["ornek1adım1.jpg", "ornek1adım2.jpg","ornek1adım3.jpg","ornek1adım4.jpg","ornek1adım5.jpg"];
-                if (i<=3 && i!=0 || i==4){
+                var cars = ["ornek12adım1.jpg", "ornek1adım2.jpg","ornek1adım3.jpg","ornek1adım4.jpg","ornek1adım5.jpg","ornek1adım6.jpg"];
+                if (i<=4 && i!=0 || i==5){
                     var currentPicture = "";
                     currentPicture = cars[i-1];
                     document.getElementById('ornek1').src= cars[i-1]
@@ -195,8 +195,8 @@
         
             var j = 0;
             function ornek2ileri() {
-                var cars = ["ornek2adım1.jpg", "ornek2adım2.jpg","ornek2adım3.jpg","ornek2adım4.jpg","ornek2adım5.jpg"];
-                if (j<=3){
+                var cars = ["ornek12adım1.jpg", "ornek2adım2.jpg","ornek2adım3.jpg","ornek2adım4.jpg","ornek2adım5.jpg","ornek2adım6.jpg"];
+                if (j<=4){
                     var currentPicture = "";
                     currentPicture = cars[j+1];
                     document.getElementById('ornek2').src= cars[j+1]
@@ -205,8 +205,8 @@
             }
         
             function ornek2geri() {
-                var cars = ["ornek2adım1.jpg", "ornek2adım2.jpg","ornek2adım3.jpg","ornek2adım4.jpg","ornek2adım5.jpg"];
-                if (j<=3 && j!=0 || j==4){
+                var cars = ["ornek12adım1.jpg", "ornek2adım2.jpg","ornek2adım3.jpg","ornek2adım4.jpg","ornek2adım5.jpg","ornek2adım6.jpg"];
+                if (j<=4 && j!=0 || j==5){
                     var currentPicture = "";
                     currentPicture = cars[j-1];
                     document.getElementById('ornek2').src= cars[j-1]
