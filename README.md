@@ -18,5 +18,9 @@
 
 [HW1](https://meryem-ezber.github.io/AutomataLab/HW1/RegExp.html)
 
+[HW2](https://meryem-ezber.github.io/AutomataLab/HW2/Expression.html)
+
+[HW3](https://meryem-ezber.github.io/AutomataLab/HW3/microJ1.html)
+
 [Project](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
 
