@@ -2,25 +2,25 @@
 
 <b>Applications</b>
 
-[CW2](https://meryem-ezber.github.io/AutomataLab/CW2/NfaAndDfa.html)
+[CW2 - NFA](https://meryem-ezber.github.io/AutomataLab/CW2/NfaAndDfa.html)
 
-[CW3](https://meryem-ezber.github.io/AutomataLab/CW3/RegExp.html)
+[CW3 - Regular Expression](https://meryem-ezber.github.io/AutomataLab/CW3/RegExp.html)
 
-[CW4](https://meryem-ezber.github.io/AutomataLab/CW4/palindromes.html)
+[CW4 - Palindrome](https://meryem-ezber.github.io/AutomataLab/CW4/palindromes.html)
 
-[CW5](https://meryem-ezber.github.io/AutomataLab/CW5/Expression.html)
+[CW5 - Expression](https://meryem-ezber.github.io/AutomataLab/CW5/Expression.html)
 
-[CW6](https://meryem-ezber.github.io/AutomataLab/CW6/Pda1.html)
+[CW6 - PDA](https://meryem-ezber.github.io/AutomataLab/CW6/Pda1.html)
 
-[CW7](https://meryem-ezber.github.io/AutomataLab/CW7/microJ3.html)
+[CW7 - MicroJ](https://meryem-ezber.github.io/AutomataLab/CW7/microJ3.html)
 
 <b>Homeworks</b>
 
-[HW1](https://meryem-ezber.github.io/AutomataLab/HW1/RegExp.html)
+[HW1 - Find Strings-Arrays with Regular Expression](https://meryem-ezber.github.io/AutomataLab/HW1/RegExp.html)
 
-[HW2](https://meryem-ezber.github.io/AutomataLab/HW2/Expression.html)
+[HW2 - Expression](https://meryem-ezber.github.io/AutomataLab/HW2/Expression.html)
 
-[HW3](https://meryem-ezber.github.io/AutomataLab/HW3/microJ1.html)
+[HW3 - MicroJ](https://meryem-ezber.github.io/AutomataLab/HW3/microJ1.html)
 
-[Project](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
+[Project - Context Free Grammar](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
 
