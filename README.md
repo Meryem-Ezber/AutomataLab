@@ -22,5 +22,7 @@
 
 [HW3 - MicroJ](https://meryem-ezber.github.io/AutomataLab/HW3/microJ1.html)
 
-[Project - Context Free Grammar](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
+<b>Project</b>
+
+[Context Free Grammar](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
 
