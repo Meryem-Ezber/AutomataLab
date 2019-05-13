@@ -12,9 +12,11 @@
 
 [CW6](https://meryem-ezber.github.io/AutomataLab/CW6/Pda1.html)
 
+[CW7](https://meryem-ezber.github.io/AutomataLab/CW7/microJ3.html)
+
 <b>Homeworks</b>
 
 [HW1](https://meryem-ezber.github.io/AutomataLab/HW1/RegExp.html)
 
-[HW4](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
+[HW4&Project](https://meryem-ezber.github.io/AutomataLab/HW4/CFG.html)
 
